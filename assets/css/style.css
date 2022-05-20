@@ -824,12 +824,10 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  margin-right: 40px;
   width: 100%;
   background: #212529;
 }
 .contact .info-box {
-  margin-left: 40px;
   width: 100%;
   background: #212529;
   padding: 20px;
