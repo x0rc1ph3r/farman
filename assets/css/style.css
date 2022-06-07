@@ -689,7 +689,7 @@ section {
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
-.services .icon-box h4 a {
+.services .icon-box h4 {
   color: #05bb66;
   transition: ease-in-out 0.3s;
 }
@@ -703,14 +703,32 @@ section {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 #03fdba;
 }
+.services .iconbox-green i {
+  color: #08d715;
+}
+.services .iconbox-green:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-green:hover .icon path {
+  fill: #08d715;
+}
+.services .iconbox-lightblue i {
+  color: #61dafb;
+}
+.services .iconbox-lightblue:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-lightblue:hover .icon path {
+  fill: #61dafb;
+}
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #0666ed;
 }
 .services .iconbox-blue:hover .icon i {
   color: #fff;
 }
 .services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+  fill: #0666ed;
 }
 .services .iconbox-orange i {
   color: #ffa76e;
