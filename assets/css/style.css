@@ -494,13 +494,14 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
+  box-shadow: 0px 0 3px 0 #03fdba;
 }
 .portfolio .portfolio-wrap:hover {
   box-shadow: 0px 0 35px 0 #03fdba;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: #05bb66;
+  background: #212529;
   position: absolute;
   left: 30px;
   right: 30px;
@@ -533,8 +534,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  border-top: 3px solid #05bb66;
+  border-left: 3px solid #05bb66;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -546,14 +547,14 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
+  border-bottom: 3px solid #05bb66;
+  border-right: 3px solid #05bb66;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #fff;
+  color: rgb(24, 210, 110);
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -562,6 +563,13 @@ section {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+.portfolio .portfolio-wrap .tagline {
+  color: rgb(24, 210, 110);
+  background-color: black;
+  padding: 12px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
@@ -597,60 +605,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #111;
-  opacity: 1;
-  border: 1px solid #05bb66;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #05bb66;
-}
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
-}
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
@@ -659,6 +613,7 @@ section {
   transition: all ease-in-out 0.3s;
   background: #212529;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  box-shadow: 0px 0 3px 0 #03fdba;
 }
 .services .icon-box .icon {
   margin: 0 auto;
@@ -809,7 +764,7 @@ section {
 .contact .info-box {
   width: 100%;
   background: #212529;
-  padding: 20px;
+  padding: 20px 0px;
 }
 .contact .info-box h4 {
   padding: 0 0 0 60px;
@@ -819,7 +774,6 @@ section {
   color: #728394;
 }
 .contact .info-box i {
-  margin-left: 40px;
   font-size: 20px;
   color: #fff;
   float: left;
@@ -830,6 +784,18 @@ section {
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
+.contact .info-box .twttr {
+  margin-left: 52px;
+}
+.contact .info-box .fb {
+  margin-left: 5px;
+}
+.contact .info-box .ig {
+  margin-left: 5px;
+}
+.contact .info-box .gthb {
+  margin-left: 5px;
+}
 .contact .info-box .twttr:hover i {
   color: #05bb66;
 }
@@ -837,6 +803,9 @@ section {
   color: #05bb66;
 }
 .contact .info-box .ig:hover i {
+  color: #05bb66;
+}
+.contact .info-box .gthb:hover i {
   color: #05bb66;
 }
 .contact .info i {
@@ -865,10 +834,10 @@ section {
   font-size: 14px;
   color: #fff;
 }
-.contact .info .email, .contact .info .phone {
+.contact .info .email {
   padding: 20px;
 }
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i {
   background: #05bb66;
   color: #fff;
 }
